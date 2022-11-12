@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [FlipSnapSuite]" parallel="tests">
+  <test thread-count="1" name="ChromeTest(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.flipsnap.test.Flipkart">
+        <methods>
+          <include name="init"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.flipsnap.test.Flipkart -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="1" name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.flipsnap.test.Flipkart">
+        <methods>
+          <include name="init"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.flipsnap.test.Flipkart -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test thread-count="1" name="EdgeTest(failed)" parallel="tests">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="com.flipsnap.test.Flipkart">
+        <methods>
+          <include name="init"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.flipsnap.test.Flipkart -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+</suite> <!-- Failed suite [FlipSnapSuite] -->

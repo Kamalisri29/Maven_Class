@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="parallelSuite" parallel="tests">
+  <test name="chromeTest">
+  <parameter name="browsers" value="chrome"></parameter>
+    <classes>
+      <class name="com.amazon.pkg.Sample3"/>
+      <class name="com.amazon.pkg.Sample2"></class>
+    </classes>
+  </test> <!-- chromeTest -->
+  <test name="firefoxTest">
+  <parameter name="browsers" value="FireFox"></parameter>
+    <classes>
+      <class name="com.amazon.pkg.Sample3"/>
+      <class name="com.amazon.pkg.Sample2"></class>
+    </classes>
+  </test> <!-- FireFoxTest -->
+  <test name="edgeTest">
+  <parameter name="browsers" value="Edge"></parameter>
+    <classes>
+      <class name="com.amazon.pkg.Sample3"/>
+      <class name="com.amazon.pkg.Sample2"></class>
+    </classes>
+  </test> <!-- EdgeTest -->
+</suite> <!-- parallelSuite -->

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [parallelSuite]" parallel="tests">
+  <test thread-count="1" name="chromeTest(failed)" parallel="tests">
+    <parameter name="browsers" value="chrome"/>
+    <classes>
+      <class name="com.amazon.pkg.Sample2">
+        <methods>
+          <include name="setup"/>
+          <include name="Test2"/>
+          <include name="Test3"/>
+          <include name="aftertest"/>
+          <include name="Test1"/>
+        </methods>
+      </class> <!-- com.amazon.pkg.Sample2 -->
+      <class name="com.amazon.pkg.Sample3">
+        <methods>
+          <include name="Test3"/>
+          <include name="Test2"/>
+          <include name="Test1"/>
+          <include name="aftertest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.amazon.pkg.Sample3 -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+  <test thread-count="1" name="firefoxTest(failed)" parallel="tests">
+    <parameter name="browsers" value="FireFox"/>
+    <classes>
+      <class name="com.amazon.pkg.Sample2">
+        <methods>
+          <include name="setup"/>
+          <include name="Test2"/>
+          <include name="Test3"/>
+          <include name="aftertest"/>
+          <include name="Test1"/>
+        </methods>
+      </class> <!-- com.amazon.pkg.Sample2 -->
+      <class name="com.amazon.pkg.Sample3">
+        <methods>
+          <include name="Test3"/>
+          <include name="Test2"/>
+          <include name="Test1"/>
+          <include name="aftertest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.amazon.pkg.Sample3 -->
+    </classes>
+  </test> <!-- firefoxTest(failed) -->
+  <test thread-count="1" name="edgeTest(failed)" parallel="tests">
+    <parameter name="browsers" value="Edge"/>
+    <classes>
+      <class name="com.amazon.pkg.Sample2">
+        <methods>
+          <include name="setup"/>
+          <include name="Test2"/>
+          <include name="Test3"/>
+          <include name="aftertest"/>
+          <include name="Test1"/>
+        </methods>
+      </class> <!-- com.amazon.pkg.Sample2 -->
+      <class name="com.amazon.pkg.Sample3">
+        <methods>
+          <include name="Test3"/>
+          <include name="Test2"/>
+          <include name="Test1"/>
+          <include name="aftertest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.amazon.pkg.Sample3 -->
+    </classes>
+  </test> <!-- edgeTest(failed) -->
+</suite> <!-- Failed suite [parallelSuite] -->
